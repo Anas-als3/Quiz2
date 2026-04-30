@@ -53,7 +53,7 @@ public class StudentController {
         if(student!=null){
             return ResponseEntity.status(200).body(student);
         }
-        return ResponseEntity.status(400).body(new ApiResponse("No Studend with that id exist"));
+        return ResponseEntity.status(400).body(new ApiResponse("No Studend with that name exist"));
 
     }
     @GetMapping("/get-major/{major}")
